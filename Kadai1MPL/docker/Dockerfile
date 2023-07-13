@@ -25,7 +25,7 @@ RUN groupadd -g $gid $uname
 RUN useradd -s /bin/bash -u $uid -g $gid -m $uname && echo "$uname:$password" | chpasswd && adduser $uname sudo
 RUN apt-get update -qq && apt-get -y install sudo && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /home/$uname
+WORKDIR /home/$uname/python-project-rllab-kadai1
 USER $uname
 
 #ENTRYPOINT [""]
