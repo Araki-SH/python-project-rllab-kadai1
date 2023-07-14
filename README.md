@@ -4,7 +4,8 @@
 
 
 ## Introduction
-Pythonチュートリアル荒木本間班の課題1のリポジトリ  
+~~Pythonチュートリアル荒木本間班の課題1のリポジトリ~~
+Pythonチュートリアル荒木本間班の課題2のリポジトリ
 This repository is for assignments of M1 tutorial by Robot Learning Lab.   
 
 #### Note :
@@ -13,10 +14,10 @@ https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install
 
 
 ## 課題について
-当グループでは課題1と課題3を選択した．
+当グループでは~~課題1~~課題２と課題3を選択した．
 ### リポジトリの作成  
 - 荒木:  
-課題1 （このリポジトリ）
+~~課題1~~課題２ （このリポジトリ）
 - 本間:  
 課題3  https://github.com/TakanoriHomma/python-project-rllab
 
@@ -27,42 +28,58 @@ https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install
 - 共通:
   環境:docker
   MLP
+  MNISTの取得
+  ハイパーパラメータの調整
 
 - 課題1:  
-  式の設定
-  サンプルの取得
+  ~~式の設定~~
+ 　　クラスタリング
 
 - 課題3:  
-  MNISTの取得
+  
   VAE
 
 ### タスクの割り振り
 負荷が均等になるように次のようにタスクを割り振る  
 - 荒木:  
-
-- 本間:  
+  クラスタリング
+  
+- 本間:
+　 VAE  
 
 
 ## Results
-課題で得られた結果があれば載せる
+MNIST
+-Kadai2/kadai2_MNIST.ipynb
+
+CIFAR-10と考察について
+-Kadai2/kadai2_CIFAR10.ipynb
 
 
-## Dependencies
-
-
-## References
 
 ## ディレクトリ構成
 ```text
-.
-├── README.md               
-├── docker/                     : Dockerセットアップ用
-│   ├── Dockerfile
-│   ├── build_docker.sh             : イメージビルド
-│   └── run_docker.sh               : コンテナ立ち上げ
-├── mlp_notebook/           : 課題1
-└── jupyter_lab_config.py       : JupyterLabの設定ファイル
-
+python-project-rllab-kadai1
+├─Kadai1MLP
+│ ├─── README.md               
+│ ├─── docker/                     : Dockerセットアップ用
+│ │   ├── Dockerfile
+│ │   ├── build_docker.sh             : イメージビルド
+│ │   └── run_docker.sh               : コンテナ立ち上げ
+│ ├── mlp_notebook/           : 課題1
+│ └── jupyter_lab_config.py       : JupyterLabの設定ファイル
+│
+├─Kadai2
+  ├─── README.md               
+  ├─── docker/                     : Dockerセットアップ用
+  │   ├── Dockerfile
+  │   ├── build_docker.sh             : イメージビルド
+  │   └── run_docker.sh               : コンテナ立ち上げ
+  ├── mlp_notebook/           : 課題2
+  │　　　　　　├── Kadai2/kadai2_MNIST.ipynb　    :MNIST
+  │　　　　　　├──Kadai2/kadai2_CIFAR10.ipynｂ    :CIFAR10
+  │ 
+  └── jupyter_lab_config.py       : JupyterLabの設定ファイル
 ```
 ## セットアップ方法
 M1tutorialで使用したDockerファイルを用いて環境を構築している。
